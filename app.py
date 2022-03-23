@@ -1,7 +1,6 @@
 import sys
 from tkinter import *
 from src.bot import Bot
-
 # Initialize Color & Font variables
 BG_GRAY = "#ABB2B9"
 BG_COLOR = "#1D1E2C"
@@ -107,8 +106,7 @@ class GUI:
     def addMessage(self, msg):
         # Validate if the message input is not empty
         if len(msg.strip()) == 0:
-            msg2 = f"> Bot: Sorry, what did you say?\n\n"
-            self.renderMessage(msg2)
+            self.renderMessage(msg)
             return
 
         # Check if username is set in the bot class
@@ -120,7 +118,9 @@ class GUI:
         else:
             # if no more nodes in dialogue or user printed "quit" - exit the program
             try:
+                
                 response = self.bot.getResponse(msg)['text']
+                
             except:
                 sys.exit()
 
@@ -133,7 +133,7 @@ class GUI:
             self.renderMessage(msg2)
 
         self.msg_entry.delete(0, END)
-
+    
     """
         Renders the user's and bot's response on the app screen
     """
@@ -142,6 +142,7 @@ class GUI:
         self.text_widget.insert(END, response)
         self.text_widget.configure(state=DISABLED)
         self.text_widget.see(END)
+
 
 if __name__ == "__main__":
     app = GUI()

@@ -1,5 +1,7 @@
+from urllib import response
 from nltk.stem.porter import PorterStemmer
 import nltk 
+import googletrans
 nltk.download('wordnet')
 nltk.download('vader_lexicon')
 nltk.download('omw-1.4')
@@ -7,6 +9,7 @@ nltk.download('averaged_perceptron_tagger')
 from nltk.corpus import wordnet
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk import pos_tag
+from googletrans import Translator
 
 import os
 import sys
@@ -92,10 +95,20 @@ class Bot:
 
 		nodeValue = self.current
 		
+		
+		transanswer = self.responseTranslate(answer)
+		language = self.getLang(answer)
+		
+		answer = transanswer
+
 		if 'print' in nodeValue:
 			nodeValue = self.findNode(nodeValue['children'][0])
 			self.current = nodeValue
+			needtran = nodeValue['text']
+			needtran = self.transNode(needtran, language)
+			nodeValue['text'] = needtran
 			return nodeValue
+			
 
 		if answer.lower() == "quit":
 			return -1
@@ -104,6 +117,7 @@ class Bot:
 			nodeValue = self.findNode(nodeValue['children'][0])
 		else:
 			answer_words = [self.stemmer.stem(word) for word in answer.lower().split(" ")]
+			
 			for child in nodeValue['children']:
 				child = self.findNode(child)
 				
@@ -137,6 +151,9 @@ class Bot:
 					break
 
 		self.current = nodeValue
+		needtran = nodeValue['text']
+		needtran = self.transNode(needtran, language)
+		nodeValue['text'] = needtran
 		return nodeValue
 
 	"""
@@ -176,3 +193,25 @@ class Bot:
 
 		p_scores = self.sid.polarity_scores(" ".join(response))
 		return p_scores
+
+		"""
+		@api
+		Translates users response and returns the translated responce into english which will be sent to the nodes
+	"""
+
+	def responseTranslate(self, response):
+		translator = googletrans.Translator()
+		tran = translator.translate(response, dest='english')
+
+		return tran.text
+
+	def getLang(self, response):
+		translator = googletrans.Translator()
+		tran = translator.translate(response, dest='english')
+		return tran.src
+
+	def transNode(self, response, lang):
+		translator = googletrans.Translator()
+		tran = translator.translate(response, src = 'en', dest = lang)
+
+		return tran.text
