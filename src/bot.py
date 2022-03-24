@@ -10,7 +10,7 @@ from nltk.corpus import wordnet
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk import pos_tag
 from googletrans import Translator
-
+import wikipediaapi
 import os
 import sys
 
@@ -95,7 +95,7 @@ class Bot:
 
 		nodeValue = self.current
 		
-		
+		baseAnswer = answer
 		transanswer = self.responseTranslate(answer)
 		language = self.getLang(answer)
 		
@@ -154,7 +154,19 @@ class Bot:
 		needtran = nodeValue['text']
 		needtran = self.transNode(needtran, language)
 		nodeValue['text'] = needtran
+
+		
+		if nodeValue['id'] == 'prescribedmedsfor':
+			
+			wiki_wiki = wikipediaapi.Wikipedia('en')
+			page_py = wiki_wiki.page(baseAnswer)
+			page_py = page_py.summary[0:120]
+			nodeValue['text'] = 'here is a summary containing more information on ' + answer + ': ' + page_py
+
+
 		return nodeValue
+
+
 
 	"""
 		@api
@@ -194,9 +206,9 @@ class Bot:
 		p_scores = self.sid.polarity_scores(" ".join(response))
 		return p_scores
 
-		"""
+	"""
 		@api
-		Translates users response and returns the translated responce into english which will be sent to the nodes
+		Translates users response and returns the translated responce into english which will be sent to the nodes.
 	"""
 
 	def responseTranslate(self, response):
@@ -205,10 +217,20 @@ class Bot:
 
 		return tran.text
 
+	"""
+		@api
+		Takes in the users response and returns the language source.
+	"""
+
 	def getLang(self, response):
 		translator = googletrans.Translator()
 		tran = translator.translate(response, dest='english')
 		return tran.src
+
+	"""
+		@api
+		translates the node's text to the language the user used last.
+	"""
 
 	def transNode(self, response, lang):
 		translator = googletrans.Translator()

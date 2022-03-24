@@ -35,7 +35,7 @@
       "id": "prescribedmedsyes",
       "children": ["prescribedmedsfor"],
       "condition": "yes_words",
-      "text": "What were they prescribed for?"
+      "text": "Can you tell me one of the drugs you were prescribed?"
     },
     {
       "id": "prescribedmedsfor",
