@@ -119,7 +119,7 @@ python3 tests/fileReader.test.py
 
 ### Synonym Recognition ###
 
-**>The bot is capable of detecting the synonyms of the words based on the user input**
+**>The bot is able to understand the users language and respond in the langauge of the user, using googletrans API**
 
 <table>
   <tr>
@@ -134,27 +134,16 @@ python3 tests/fileReader.test.py
   </tr>
  </table>
  
- ### POS Tagging ###
+ ### Wikipedia API ###
  
- **>Replying with a question or a therapy word (anxiety / depression / suicide) 
-   Results in no more scheduled time**
-   
- **>Replying with just a question 
-   Results in the system not being able to help**
-   
- **>Replying with anything else 
-   Results in the system concluding the session**
+ **>User can interact with the bot and get information directly from wikipedia based off of the users input**
  
  <table>
   <tr>
-    <td>Question/Therapy words</td>
-    <td>Just Question</td>
-    <td>Other</td>
+    <td>English Link to a Wikipedia page</td>
   </tr>
   <tr>
-    <td><img src="./docs/images/POS1.PNG" width="300" height="500"></td>
-    <td><img src="./docs/images/POS2.PNG" width="300" height="500"></td>
-    <td><img src="./docs/images/POS3.PNG" width="300" height="500"></td>
+    <td><img src="./docs/images/engLink.png" width="300" height="500"></td>
   </tr>
  </table>
  
