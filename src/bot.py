@@ -175,10 +175,10 @@ class Bot:
 		if nodeValue['id'] == 'nonprescribedyes':
 			
 			try:
-				wikipedia.set_lang(language)
+				wikipedia.set_lang('en')
 				abuses = wikipedia.summary("Abuse", sentences = 3)
 				trantext = self.transNode(abuses, language)
-				newtext = self.transNode('Here is a brief summary on substance abuse', language)
+				newtext = self.transNode('Here is a brief summary on substance abuse from wikipedia: ', language)
 				nodeValue['text'] = newtext + ': ' + trantext
 			except:
 
@@ -190,6 +190,7 @@ class Bot:
 			try:
 				wikipedia.set_lang('en')
 				mc = wikipedia.page(answer)
+				print(answer)
 				stringBuild = 'Here are some of the wikipedia suggested readings associated with ' + answer + ': '
 				sec = mc.section('Further reading')
 				stringBuild = stringBuild + sec
