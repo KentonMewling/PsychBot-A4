@@ -172,8 +172,22 @@ class Bot:
 				nodeValue['text'] = newtext
 				
 		
+		if nodeValue['id'] == 'nonprescribedyes':
+			
+			try:
+				wikipedia.set_lang(language)
+				abuses = wikipedia.summary("Abuse", sentences = 3)
+				trantext = self.transNode(abuses, language)
+				newtext = self.transNode('Here is a brief summary on substance abuse', language)
+				nodeValue['text'] = newtext + ': ' + trantext
+			except:
 
+				newtext = self.transNode('Drugs and alcohol can be highly addictive, you should try to refrain from taking them in high quantities.', language)
+				nodeValue['text'] = newtext
+
+		
 		return nodeValue
+
 
 	"""
 		@api
