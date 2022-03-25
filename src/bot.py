@@ -185,8 +185,41 @@ class Bot:
 				newtext = self.transNode('Drugs and alcohol can be highly addictive, you should try to refrain from taking them in high quantities.', language)
 				nodeValue['text'] = newtext
 
+		if nodeValue['id'] == 'whyfavourite':
+			
+			try:
+				wikipedia.set_lang('en')
+				mc = wikipedia.page(answer)
+				stringBuild = 'Here are some of the wikipedia suggested readings associated with ' + answer + ': '
+				sec = mc.section('Further reading')
+				stringBuild = stringBuild + sec
+				newtext = self.transNode(stringBuild, language)
+				nodeValue['text'] = stringBuild
+
+			except:
+				transtest = 'There is no recommended wikipedia readings associated with ' + answer
+				newtext = self.transNode(transtest, language)
+				nodeValue['text'] = newtext
+
 		
+
+		if nodeValue['id'] == 'favouritegameno':
+			
+			try:
+				wikipedia.set_lang('en')
+				mc = wikipedia.summary("List of best-selling video games", sentences = 5)
+				stringBuild = 'Here are some of the top games from wikipedia: '
+				stringBuild = stringBuild + mc
+				newtext = self.transNode(stringBuild, language)
+				nodeValue['text'] = newtext
+
+			except:
+				transtest = 'You should consider playing games, they are great for relieving stress.'
+				newtext = self.transNode(transtest, language)
+				nodeValue['text'] = newtext
+
 		return nodeValue
+		
 
 
 	"""
@@ -250,7 +283,7 @@ class Bot:
 
 	"""
 		@api
-		translates the node's text to the language the user used last.
+		translates the text to the language the user used.
 	"""
 
 	def transNode(self, response, lang):
