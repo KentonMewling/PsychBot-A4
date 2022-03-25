@@ -201,34 +201,23 @@ This is a level 1 data flow diagram. It shows a more specific relationship betwe
 
 ## Project Demo 
 
-**A2: Sample Demo #1**
+**A: Sample Demo #1**
 
-<img src="./docs/images/good1.png" width="500">
+<img src="./docs/images/getLang.png" width="500">
 
 
 **A2: Sample Demo #2**
 
-<img src="./docs/images/good2.png" width="500">
+<img src="./docs/images/responseTranslate.png" width="500">
 
 
 **A2: Sample Demo #3**
 
-<img src="./docs/images/good3.png" width="500">
-
+<img src="./docs/images/transNode.png" width="500">
 
 ## Presentation 
-**Assignment 2**
-
-https://drive.google.com/file/d/1d1YoKrsMo2QLvyRmTXqykamdag-MjdqK/view
-
-**Assignment 3**
-
-Links goes here
+**Assignment 4**
 
 ## Contributors
+- [@KentonMewling](https://github.com/KentonMewling)
 
-- [@d3li0n](https://github.com/d3li0n) - GUI, Automated Unit Testing, Code Refactoring, Project Management.
-- [@KentonMewling](https://github.com/KentonMewling) - Automated Unit Testing, Presentation.
-- [@RyanG418](https://github.com/RyanG418) - Documentation, Presentation.
-- [@vinui409](https://github.com/vinui409) - Documentation, Presentation.
-- [@OKThomas1](https://github.com/OKThomas1) - PorterStemmer, POS, Sentimental Analysis, and Synonym Recognition development.
