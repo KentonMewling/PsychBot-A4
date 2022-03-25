@@ -111,22 +111,9 @@ python3 tests/fileReader.test.py
 
 ## Dialogue
 
-<img src="./docs/convo.gif" width="500" height="750">
+## Assignment 4 New Features
 
-### Error case 1 ###
-In this case the bot does not understand the term "gang". The program has an issue with the response due to the limited capabilities of the library. The current word list in the library doesn't include enough dictionary to handle all possible words that user may provide to the bot. 
-
-<img src="./docs/images/assign3error1.png">
-
-### Error case 2 ###
-In this case the bot does not correctly recoginize "goodd" as "good". This issue occurs due to the limitations of the library we are currently using - PorterStemmer. It has a limited data "object" of information on how to correctly "fix" the error unlike the larger companies(e.g., Google search). 
-
-<img src="./docs/images/assign3error2.png">
-
-
-## Assignment 3 New Features
-
-### GUI ###
+### Google Translate API ###
  
  <img src="./docs/images/GUI.PNG" width="300" height="500">
 
@@ -136,12 +123,14 @@ In this case the bot does not correctly recoginize "goodd" as "good". This issue
 
 <table>
   <tr>
-    <td>Word : Family</td>
-     <td>Word : Folk</td>
+     <td>Word : English</td>
+     <td>Word : Finnish</td>
+     <td>Word : Chinese</td>
   </tr>
   <tr>
-    <td><img src="./docs/images/syn2.PNG" width="300" height="500"></td>
-    <td><img src="./docs/images/syn1.PNG" width="300" height="500"></td>
+    <td><img src="./docs/images/engl.png" width="300" height="500"></td>
+    <td><img src="./docs/images/finnish.png" width="300" height="500"></td>
+   <td><img src="./docs/images/chinese.png" width="300" height="500"></td>
   </tr>
  </table>
  
