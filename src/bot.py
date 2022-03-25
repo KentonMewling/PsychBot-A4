@@ -190,7 +190,7 @@ class Bot:
 			try:
 				wikipedia.set_lang('en')
 				mc = wikipedia.page(answer)
-				print(answer)
+				
 				stringBuild = 'Here are some of the wikipedia suggested readings associated with ' + answer + ': '
 				sec = mc.section('Further reading')
 				stringBuild = stringBuild + sec
