@@ -1,4 +1,7 @@
+from genericpath import exists
+from lib2to3.pgen2.pgen import ParserGenerator
 from urllib import response
+from xml.dom.expatbuilder import parseFragment
 from nltk.stem.porter import PorterStemmer
 import nltk 
 import googletrans
@@ -10,7 +13,7 @@ from nltk.corpus import wordnet
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk import pos_tag
 from googletrans import Translator
-import wikipediaapi
+import wikipedia
 import os
 import sys
 
@@ -158,15 +161,19 @@ class Bot:
 		
 		if nodeValue['id'] == 'prescribedmedsfor':
 			
-			wiki_wiki = wikipediaapi.Wikipedia('en')
-			page_py = wiki_wiki.page(baseAnswer)
-			page_py = page_py.summary[0:120]
-			nodeValue['text'] = 'here is a summary containing more information on ' + answer + ': ' + page_py
+			try:
+				wikipedia.set_lang(language)
+				page_py = wikipedia.page(baseAnswer)
+				newtext = self.transNode('here is a link containing more information on ', language)
+				nodeValue['text'] = newtext + baseAnswer + ': ' + page_py.url
+			except:
 
+				newtext = self.transNode('I cant find any information on wikipedia regarding that. I would consult your doctor for more information ', language)
+				nodeValue['text'] = newtext
+				
+		
 
 		return nodeValue
-
-
 
 	"""
 		@api
