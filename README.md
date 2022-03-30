@@ -5,11 +5,8 @@
 - [Project Description](#project-description)
 - [Project Documentation](#project-documentation)
 - [Unit Tests](#unit-tests)
-- [Features by Branch](#features-by-branch)
-- [Dialogue](#dialogue)
-- [Assignment 3 New Features](#assignment-3-new-features)
-- [Data Flow Diagrams](#data-flow-diagrams)
-- [Project Demo](#project-demo)
+- [Assignment 4 New Features](#assignment-4-new-features)
+- [New Methods](#new-methods)
 - [Contributors](#contributors)
 - [Presentation](#presentation)
 
