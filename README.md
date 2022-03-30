@@ -105,11 +105,6 @@ python3 tests/bot.test.py
 python3 tests/fileReader.test.py
 ```
 &nbsp;
-## Features by Branch
-
-<img src="./docs/images/newgraph.PNG" width="850" >
-
-## Dialogue
 
 ## Assignment 4 New Features
 
@@ -145,20 +140,20 @@ python3 tests/fileReader.test.py
   </tr>
  </table>
  
-## Project Demo 
+## New Methods
 
-**A: Sample Demo #1**
-
+**A4: getLang function**
+This function will get the language the user is using based on google translates certainty determining function and will return the language back to the bot.
 <img src="./docs/images/getLang.png" width="500">
 
 
-**A2: Sample Demo #2**
-
+**A4: responseTranslate function**
+This function will take in the users response and translate it to english so the response can be understood by the correct node.
 <img src="./docs/images/responseTranslate.png" width="500">
 
 
-**A2: Sample Demo #3**
-
+**A4: transNode function **
+This function takes in the responce the bot will answer with and the users language that was determined from the getLang function and will translate the bot's response to the users language
 <img src="./docs/images/transNode.png" width="500">
 
 ## Presentation 
