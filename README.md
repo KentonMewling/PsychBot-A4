@@ -156,7 +156,7 @@ This function will take in the users response and translate it to english so the
 <img src="./docs/images/responseTranslate.png" width="500">
 
 
-**A4: transNode function **
+**A4: transNode function**
 
 This function takes in the responce the bot will answer with and the users language that was determined from the getLang function and will translate the bot's response to the users language
 
