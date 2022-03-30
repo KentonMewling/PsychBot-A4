@@ -114,18 +114,14 @@ python3 tests/fileReader.test.py
 ## Assignment 4 New Features
 
 ### Google Translate API ###
- 
- <img src="./docs/images/GUI.PNG" width="300" height="500">
-
-### Synonym Recognition ###
 
 **>The bot is able to understand the users language and respond in the langauge of the user, using googletrans API**
 
 <table>
   <tr>
-     <td>Word : English</td>
-     <td>Word : Finnish</td>
-     <td>Word : Chinese</td>
+     <td>Language : English</td>
+     <td>Language : Finnish</td>
+     <td>Language : Chinese</td>
   </tr>
   <tr>
     <td><img src="./docs/images/engl.png" width="300" height="500"></td>
@@ -147,36 +143,6 @@ python3 tests/fileReader.test.py
   </tr>
  </table>
  
- ### Sentiment Analysis ###
- 
- **>the program determines if the user's response has a positive or negative context**
- 
- <table>
-  <tr>
-    <td>Negative</td>
-    <td>Positive</td>
-  </tr>
-  <tr>
-    <td><img src="./docs/images/SA1.PNG" width="300" height="500"></td>
-    <td><img src="./docs/images/SA2.PNG" width="300" height="500"></td>
-  </tr>
- </table>
- 
- ## Data Flow Diagrams ##
- 
- ### Data Flow Diagram level 0 ###
-
-This is a level 0 data flow diagram. It shows the abstract relationships between the user, our graphical user inferface and the bot interact. 
-
-<img src="./docs/images/DFD0updated.png" width="1000">
- 
- ### Data Flow Diagram level 1 ###
-
-
-This is a level 1 data flow diagram. It shows a more specific relationship between the user, our graphical user inferface and the bot. This includes the process in which the bot recieves data from the GUI, processes that data through the Porterstemmer as well as many language toolkits to improve the response.
-
-<img src="./docs/images/DFD1updated.png" width="1000">
-
 ## Project Demo 
 
 **A: Sample Demo #1**
