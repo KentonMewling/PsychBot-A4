@@ -140,6 +140,8 @@ python3 tests/fileReader.test.py
   </tr>
   <tr>
     <td><img src="./docs/images/engLink.png" width="300" height="500"></td>
+   <td><img src="./docs/images/topGamesWikiENGL.png" width="300" height="500"></td>
+   <td><img src="./docs/images/gamesSuggEngl.png" width="300" height="500"></td>
   </tr>
  </table>
  
