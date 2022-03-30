@@ -143,21 +143,18 @@ python3 tests/fileReader.test.py
 ## New Methods
 
 **A4: getLang function**
-
 This function will get the language the user is using based on google translates certainty determining function and will return the language back to the bot.
 
 <img src="./docs/images/getLang.png" width="500">
 
 
 **A4: responseTranslate function**
-
 This function will take in the users response and translate it to english so the response can be understood by the correct node.
 
 <img src="./docs/images/responseTranslate.png" width="500">
 
 
 **A4: transNode function**
-
 This function takes in the responce the bot will answer with and the users language that was determined from the getLang function and will translate the bot's response to the users language
 
 <img src="./docs/images/transNode.png" width="500">
