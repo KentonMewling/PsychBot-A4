@@ -71,7 +71,7 @@ The project was created for the UBC Okanagan third year level course.
 - [Network Graph/Branch & Commits](https://github.com/KentonMewling/Psych-Bot/network)
 - [Unit Test Documentation](https://github.com/KentonMewling/Psych-Bot/blob/main/docs/UnitTesting_documentation.pdf)
 - [API Documentation](docs/API.pdf)
-- [Assignment 4 Project Documentation] (https://github.com/KentonMewling/PsychBot-A4/blob/main/COSC%20310%20-%20001%20(4).pdf)
+- [Assignment 4 Project Documentation](https://github.com/KentonMewling/PsychBot-A4/blob/main/COSC%20310%20-%20001%20(4).pdf)
 ## Unit Tests
 
 ### **For Windows**
