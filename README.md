@@ -64,14 +64,17 @@ The project was created for the UBC Okanagan third year level course.
 *For **legal** reasons, neither the bot nor developers are certified to provide medical help.
 
 
-## Project Documentation
+## Previous Project Documentation
 - [Project Plan Document](https://github.com/KentonMewling/Psych-Bot/blob/main/docs/Assignment2_Project_Plan.pdf)
 - [Word Breakdown Structure](https://github.com/KentonMewling/Psych-Bot/blob/main/docs/WBS.png)
 - [Gantt Chart](https://github.com/KentonMewling/Psych-Bot/blob/main/docs/Gantt%20Chart.png)
 - [Network Graph/Branch & Commits](https://github.com/KentonMewling/Psych-Bot/network)
 - [Unit Test Documentation](https://github.com/KentonMewling/Psych-Bot/blob/main/docs/UnitTesting_documentation.pdf)
 - [API Documentation](docs/API.pdf)
+
+## Assignmetn 4 Documentation
 - [Assignment 4 Project Documentation](https://github.com/KentonMewling/PsychBot-A4/blob/main/COSC%20310%20-%20001%20(4).pdf)
+
 ## Unit Tests
 
 ### **For Windows**
