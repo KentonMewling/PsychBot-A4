@@ -109,7 +109,7 @@ python3 tests/fileReader.test.py
 
 ### Google Translate API ###
 
-**>The bot is able to understand the users language and respond in the langauge of the user, using googletrans API**
+**>The bot is able to understand the users language and respond in the langauge of the user, using googletrans API.**
 
 <table>
   <tr>
@@ -126,7 +126,7 @@ python3 tests/fileReader.test.py
  
  ### Wikipedia API ###
 
- **>User can interact with the bot and get information directly from wikipedia based off of the users input**
+ **>User can interact with the bot and get information directly from wikipedia based off of the users input.**
  
  <table>
   <tr>
@@ -140,7 +140,8 @@ python3 tests/fileReader.test.py
  </table>
  
 ## New Methods
- **API Documentation file has more information regarding the uses and functionality of each of the API's**
+ **API Documentation file has more information regarding the uses and functionality of each of the API's.**
+ 
 **A4: getLang function**
 This function will get the language the user is using based on google translates certainty determining function and will return the language back to the bot.
 
@@ -154,7 +155,7 @@ This function will take in the users response and translate it to english so the
 
 
 **A4: transNode function**
-This function takes in the responce the bot will answer with and the users language that was determined from the getLang function and will translate the bot's response to the users language
+This function takes in the responce the bot will answer with and the users language that was determined from the getLang function and will translate the bot's response to the users language.
 
 <img src="./docs/images/transNode.png" width="500">
 
