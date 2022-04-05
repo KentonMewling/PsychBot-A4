@@ -5,7 +5,7 @@
 - [Project Description](#project-description)
 - [Project Documentation](#project-documentation)
 - [Unit Tests](#unit-tests)
-- [Assignment 4 Documentation] (#assignment-4-documentation)
+- [Assignment 4 Documentation](#assignment-4-documentation)
 - [Assignment 4 New Features](#assignment-4-new-features)
 - [New Methods](#new-methods)
 - [Contributors](#contributors)
