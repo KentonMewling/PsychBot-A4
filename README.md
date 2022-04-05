@@ -72,8 +72,7 @@ The project was created for the UBC Okanagan third year level course.
 - [Unit Test Documentation](https://github.com/KentonMewling/Psych-Bot/blob/main/docs/UnitTesting_documentation.pdf)
 - [API Documentation](docs/API.pdf)
 
-## Assignment 4 Documentation
-- [Assignment 4 Project Documentation](https://github.com/KentonMewling/PsychBot-A4/blob/main/docs/PsychBot%20-%20API%20Documentation.pdf)
+
 ## Unit Tests
 
 ### **For Windows**
@@ -104,6 +103,9 @@ python3 tests/bot.test.py
 python3 tests/fileReader.test.py
 ```
 &nbsp;
+
+## Assignment 4 Documentation 
+- [Assignment 4 Project Documentation](https://github.com/KentonMewling/PsychBot-A4/blob/main/docs/PsychBot%20-%20API%20Documentation.pdf)
 
 ## Assignment 4 New Features
 
