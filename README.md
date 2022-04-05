@@ -73,7 +73,7 @@ The project was created for the UBC Okanagan third year level course.
 - [API Documentation](docs/API.pdf)
 
 ## Assignment 4 Documentation
-- [Assignment 4 Project Documentation](https://github.com/KentonMewling/PsychBot-A4/blob/main/COSC%20310%20-%20001%20(4).pdf)
+- [Assignment 4 Project Documentation](https://github.com/KentonMewling/PsychBot-A4/blob/main/docs/PsychBot%20-%20API%20Documentation.pdf)
 ## Unit Tests
 
 ### **For Windows**
@@ -125,7 +125,7 @@ python3 tests/fileReader.test.py
  </table>
  
  ### Wikipedia API ###
- 
+
  **>User can interact with the bot and get information directly from wikipedia based off of the users input**
  
  <table>
@@ -140,7 +140,7 @@ python3 tests/fileReader.test.py
  </table>
  
 ## New Methods
-
+ **API Documentation file has more information regarding the uses and functionality of each of the API's**
 **A4: getLang function**
 This function will get the language the user is using based on google translates certainty determining function and will return the language back to the bot.
 
