@@ -129,7 +129,7 @@ python3 tests/fileReader.test.py
  
  ### Wikipedia API ###
 
- **>User can interact with the bot and get information directly from wikipedia based off of the users input.**
+ **>User can interact with the bot and get information directly from wikipedia based off of the users input in any language.**
  
  <table>
   <tr>
@@ -141,6 +141,8 @@ python3 tests/fileReader.test.py
    <td><img src="./docs/images/gamesSuggEngl.png" width="300" height="500"></td>
   </tr>
  </table>
+ 
+** Both the API's were integrated together so you can use wikipedia in any language.**
  
 ## New Methods
  **API Documentation file has more information regarding the uses and functionality of each of the API's.**
