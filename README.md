@@ -143,6 +143,15 @@ python3 tests/fileReader.test.py
  </table>
  
 **Both the API's were integrated together so you can use wikipedia in any language.**
+ <table>
+  <tr>
+    <td>Different Languages using Wikipedia</td>
+  </tr>
+  <tr>
+    <td><img src="./docs/images/310_F_Wiki.png" width="300" height="500"></td>
+   <td><img src="./docs/images/310_C_Wiki.png" width="300" height="500"></td>
+  </tr>
+ </table>
  
 ## New Methods
  **API Documentation file has more information regarding the uses and functionality of each of the API's.**
