@@ -142,7 +142,7 @@ python3 tests/fileReader.test.py
   </tr>
  </table>
  
-** Both the API's were integrated together so you can use wikipedia in any language.**
+**Both the API's were integrated together so you can use wikipedia in any language.**
  
 ## New Methods
  **API Documentation file has more information regarding the uses and functionality of each of the API's.**
